@@ -33,6 +33,7 @@ public class Main {
                 for (int j = 0; j < pattern.length(); j++) {
                     if ((pattern.charAt(j) != '*') && (source.charAt(i + j) != pattern.charAt(j))) {
                         isMatch = false;
+                        break;
                     }
                 }
                 if (isMatch) {
